@@ -8,7 +8,7 @@ plugins {
 	kotlin("plugin.jpa") version "1.5.21"
 }
 
-group = "com.junocoding"
+group = "com.roy"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -24,6 +24,14 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.h2database:h2")
+
+
+	implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
+
+	implementation ("org.hibernate:hibernate-core:5.6.4.Final")
+
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	runtimeOnly("mysql:mysql-connector-java:8.0.32")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("com.ninja-squad:springmockk:3.0.1")

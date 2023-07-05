@@ -1,9 +1,7 @@
-package com.junocoding.bank.controller
+package com.roy.bank.controller
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.junocoding.bank.controller.model.TransactionModel
-import com.junocoding.bank.repository.model.TransactionDBModel
-import com.junocoding.bank.repository.TransferRepository
+import com.roy.bank.controller.model.TransactionModel
 import com.ninjasquad.springmockk.MockkBean
 import io.mockk.every
 import io.mockk.mockk
